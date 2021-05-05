@@ -1,0 +1,154 @@
+a, a:hover {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtnsbtnsbtns li {
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.socialbtns li {
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.socialbtns .fa {
+  color: #FFF;
+  text-shadow: 1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  -webkit-text-shadow: 1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  -moz-text-shadow: 1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  -o-text-shadow: 1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+  color: #000;
+  text-shadow: 1px 1px 0px #fff,
+    1px -1px 0px #fff,
+    -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  -webkit-text-shadow: 1px 1px 0px #fff,
+    1px -1px 0px #fff,
+    -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  -moz-text-shadow: 1px 1px 0px #fff,
+    1px -1px 0px #fff,
+    -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  -o-text-shadow: 1px 1px 0px #fff,
+    1px -1px 0px #fff,
+    -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  transition: all ease 0.5s;
+  -moz-transition: all ease-in 0.5s;
+  -webkit-transition: all ease-in 0.5s;
+  -o-transition: all ease-in 0.5s;
+}
+
+body {
+  background-color: white;
+}
+
+#note {
+  color: red;
+}
+
+#main {
+  background-color: #305973;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer:hover {
+  background-color: white;
+  color: black;
+}
+
+#heading {
+  width: 100%;
+  display: absolute;
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  padding-top: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  top: 0;
+}
+
+#heading:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-family: 'Itim', cursive;
+  color: black;
+  text-align: center;
+}
+
+.form-check {
+  background-color: black;
+  color: white;
+  padding: 0 0 0 1em;
+}
+
+#input {
+  background-color: black;
+  color: white;
+}
+
+.form-check:hover {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: #c9d6df;
+  color: #1e2022;
+  font-family: 'Krona One', sans-serif;
+  border: 2px;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em;
+  /*float: left;*/
+}
+
+div:hover {
+  background-color: #11999e;
+  color: #f9f7f7;
+}

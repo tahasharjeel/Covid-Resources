@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>test</title>
+</head>
+
+<body>
+  <div id="heading">
+    <h1>Covid Resources</h1>
+  </div>
+
+  <div id="main">
+
+    <form id="myForm" class="" action="https://covid-resources-project.herokuapp.com" method="post">
+      <div id="input" class="form-group">
+        <label for="usr">City:</label>
+        <input type="text" class="form-control" id="usr" name="city" placeholder="Enter city name (Please enter correct spelling for better results)">
+        <br>
+        <label>Resources:</label>
+        <br>
+        <table>
+          <tr>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="oxygen" id="r1" onclick="check()">
+                <label class="form-check-label" for="r1">
+                  Oxygen
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="ventilator" id="r2" onclick="check()">
+                <label class="form-check-label" for="r2">
+                  Ventilator
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="beds" id="r3" onclick="check()">
+                <label class="form-check-label" for="r3">
+                  Beds
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="ICU" id="r4" onclick="check()">
+                <label class="form-check-label" for="r4">
+                  ICU
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="plasma" id="r5" onclick="check()">
+                <label class="form-check-label" for="r5">
+                  Plasma
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="Remdesivir" id="r6" onclick="check()">
+                <label class="form-check-label" for="r6">
+                  Remdesivir
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="covishield" id="r9" onclick="check()">
+                <label class="form-check-label" for="r9">
+                  Covishield
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="covaxin" id="r11" onclick="check()">
+                <label class="form-check-label" for="r11">
+                  Covaxin
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="Fabiflu" id="r8" onclick="check()">
+                <label class="form-check-label" for="r8">
+                  Fabiflu
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="Tocilizumab" id="r10" onclick="check()">
+                <label class="form-check-label" for="r10">
+                  Tocilizumab
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="Favipiravir" id="r7" onclick="check()">
+                <label class="form-check-label" for="r7">
+                  Favipiravir
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" name="radioB" type="radio" value="other" id="r12" onclick="checkOther()">
+                <label class="form-check-label" for="r12">
+                  Other
+                </label>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <input type="text" class="form-control" id="otherR" name="other" placeholder="Other" style="display:none;">
+        <br>
+        <button type="submit" class="btn btn-light" value="Submit">Submit</button>
+        <br>
+        <br>
+        <p id="note">Note: If the information is not complete in the result, please click on the result to open the complete tweet.</p>
+        <p id="results"></p>
+      </div>
+    </form>
+  </div>
+
+  <footer id="ft" class="footer" style="align:center; text-align:center; border-radius:0; padding:0; padding-top:0.3em;  margin:0;">
+    <p style="display:inline; font-size:1em;">Developed by Mohd Taha Sharjeel</p>
+    <div align="center" class="socialbtns" style="margin:0; padding:0; background-color:white; display:inline;">
+      <li style="width:5em"><a href="https://www.linkedin.com/in/mohd-taha-sharjeel-098708182/" class="fa fa-lg fa-linkedin"></a></li>
+      <li style="width:5em"><a href="https://github.com/tahasharjeel" class="fa fa-lg fa-github"></a></li>
+      <li style="width:5em"><a href="https://www.instagram.com/taha_sharjeel/" class="fa fa-lg fa-instagram"></a></li>
+    </div>
+    <p style="font-weight:normal; font-size:0.6em; padding-top:0.8em; padding-bottom:0.2em;">&copy 2021 Mohd Taha Sharjeel<br>All rights reserved</p>
+  </footer>
+</body>
+
+</html>
