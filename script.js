@@ -8,10 +8,11 @@ function check() {
 
 $(document).ready(function() {
   $("form").submit(function(event) {
-
+    
     let rbs = document.querySelectorAll('input[name="radioB"]');
     let selectedValue = "";
-
+    
+    // this for loop is used to check which radio button is selected
     for (let rb of rbs) {
       if (rb.checked) {
         selectedValue = rb.value;
@@ -52,7 +53,7 @@ $(document).ready(function() {
     }).done(function(data) {
       let k = 0;
       deleteDiv(k);
-
+      // This is used to delete previous results 
       function deleteDiv(k) {
         let myNode = document.getElementById("divTweet" + k);
         while (true) {
@@ -88,7 +89,8 @@ $(document).ready(function() {
         let main = document.getElementById('main');
 
         main.appendChild(element);
-
+        
+        // windows open function is used to open tweet on twitter 
         element.onclick = function() {
           window.open("http://" + tweetData.tweetLink, "_blank");
         }
